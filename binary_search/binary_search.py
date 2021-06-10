@@ -35,6 +35,7 @@ if __name__ =='__main__':
     sorted_list.add(random.randint(-3*length, 3*length))
   sorted_list = sorted(list(sorted_list))
 
+  # try searching for each item as target
   start = time.time()
   for target in sorted_list:
     naive_search(sorted_list, target)
