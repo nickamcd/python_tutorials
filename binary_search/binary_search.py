@@ -12,6 +12,10 @@ def binary_search(l, target, low=None, high=None):
     low = 0
   if high is None:
     high = len(l) - 1
+
+  # not found
+  if high < low:
+    return -1
   
   mid = (low + high) // 2
 
